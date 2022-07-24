@@ -5,3 +5,40 @@
     text-decoration: none;
     list-style-type: none;
 }
+/* color */
+/* 
+#69F0AE
+
+
+
+*/
+/* body */
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color:#69f0AE ;
+}
+.navBar{
+    width: 15%;
+    height: 100vh;
+    background-color: #512DA8;
+    display: flex;
+    flex-direction: column;
+}
+.profile{
+    width: 100%;
+    height: 20%;
+    background-color: yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.image--profile{
+    width: 70%;
+    height: 60%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+}

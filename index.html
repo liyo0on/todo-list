@@ -22,6 +22,49 @@
           <li class="navBarList">folders</li>
         </ul>
       </div>
+      <div class="baiscontainer">
+        <div class="main--panel">
+          <button class="create--btn create--list">create todo list</button>
+          <button class="create--btn create--folder">create todo folder</button>
+          <div class="create--todo--list">
+            <div class="title--todo">
+              <label for="title">title</label>
+              <input
+                type="text"
+                name="title"
+                id="todo--title"
+                placeholder="enter you title"
+              />
+            </div>
+            <div>
+              <label for="description"></label>
+              <textarea
+                name="description"
+                id="todo--description"
+                placeholder="description"
+              ></textarea>
+            </div>
+            <div class="btn">
+              <button class="create--todo">create</button>
+            </div>
+          </div>
+
+          <div class="create--todo--folder">
+            <div class="folder--todo">
+              <label for="new-folder">new folder</label>
+              <input
+                type="text"
+                name="new-folder"
+                id="todo--new-folder"
+                placeholder="enter you name"
+              />
+            </div>
+            <div class="btn">
+              <button class="create--todo">create</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="/java/index.js"></script>
   </body>

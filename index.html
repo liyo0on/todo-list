@@ -26,9 +26,9 @@
         <div class="main--panel">
           <button class="create--btn create--list">create todo list</button>
           <button class="create--btn create--folder">create todo folder</button>
-          <div class="create--todo--list">
+          <div class="create--todo--list create--panel make-panels-invisible">
             <div class="title--todo">
-              <label for="title">title</label>
+              <label for="title">title : </label>
               <input
                 type="text"
                 name="title"
@@ -36,22 +36,22 @@
                 placeholder="enter you title"
               />
             </div>
-            <div>
-              <label for="description"></label>
+            <div class="description--todo">
+              <label for="description">description</label>
               <textarea
                 name="description"
                 id="todo--description"
                 placeholder="description"
               ></textarea>
             </div>
-            <div class="btn">
+            <div class="btn-create-todo">
               <button class="create--todo">create</button>
             </div>
           </div>
 
-          <div class="create--todo--folder">
+          <div class="create--todo--folde create--panel make-panels-invisible">
             <div class="folder--todo">
-              <label for="new-folder">new folder</label>
+              <label for="new-folder">new folder : </label>
               <input
                 type="text"
                 name="new-folder"
@@ -59,7 +59,7 @@
                 placeholder="enter you name"
               />
             </div>
-            <div class="btn">
+            <div class="btn-create-todo">
               <button class="create--todo">create</button>
             </div>
           </div>

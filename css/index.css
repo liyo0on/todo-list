@@ -21,19 +21,22 @@
 .navBar{
     width: 15%;
     height: 100vh;
-    background-color: #512DA8;
+    /* background-color: #512DA8; */
     display: flex;
     flex-direction: column;
 }
 .profile{
     width: 100%;
     height: 20%;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
+    background-color: blue;
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 10px;
+    border-radius: 20px;
 }
 .image--profile{
     width: 70%;
@@ -49,7 +52,7 @@
     height: 70%;
     display: flex;
     flex-direction: column;
-    background-color: tomato;
+    /* background-color: tomato; */
 }
 .navBarList{
     width: 100%;
@@ -61,4 +64,6 @@
     cursor: pointer;
     font-size: 26px;
     text-transform: capitalize;
+    border: 3px solid red;
+    border-radius: 20px;
 }

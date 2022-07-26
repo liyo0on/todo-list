@@ -19,3 +19,19 @@ function load(){
 }
 load()
 
+//  creat mainpanel
+
+let btnCreateList = document.querySelector('.create--list')
+let btnCreateFolder = document.querySelector('.create--folder')
+
+let CreateTodoListElem = document.querySelector('.create--todo--list')
+let CreateFolderListElem = document.querySelector('.create--todo--folde')
+
+
+btnCreateList.addEventListener('click', ()=>{
+    CreateTodoListElem.classList.toggle('make-panels-invisible')
+})
+
+btnCreateFolder.addEventListener('click', ()=>{
+    CreateFolderListElem.classList.toggle('make-panels-invisible')
+})

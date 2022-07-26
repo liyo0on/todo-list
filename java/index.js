@@ -27,6 +27,7 @@ let btnCreateFolder = document.querySelector('.create--folder')
 let CreateTodoListElem = document.querySelector('.create--todo--list')
 let CreateFolderListElem = document.querySelector('.create--todo--folde')
 
+let btnBackPage = document.querySelectorAll('.back--todo')
 
 btnCreateList.addEventListener('click', ()=>{
     CreateTodoListElem.classList.toggle('make-panels-invisible')
@@ -35,3 +36,9 @@ btnCreateList.addEventListener('click', ()=>{
 btnCreateFolder.addEventListener('click', ()=>{
     CreateFolderListElem.classList.toggle('make-panels-invisible')
 })
+btnBackPage.forEach(element => {
+    element.addEventListener('click', ()=>{
+        CreateTodoListElem.classList.remove('make-panels-invisible')
+        CreateFolderListElem.classList.remove('make-panels-invisible')
+    })
+});

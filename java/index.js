@@ -5,9 +5,17 @@ imageprofileElem.addEventListener('change', function(){
     // console.log(imageprofileElem.value);
     const reader = new FileReader()
     reader.addEventListener('load', () =>{
-        upload_Image = reader.result;
+        localStorage.setItem('profileimage', reader.result)
+        upload_Image = localStorage.getItem('profileimage');
         // console.log(reader.result);
         document.querySelector('.image--profile').style.backgroundImage = `URl(${upload_Image})`
     })
     reader.readAsDataURL(this.files[0])
+    load()
 } )
+let image_profile = document.querySelector('.image--profile')
+function load(){
+    image_profile.style.backgroundImage = `url(${localStorage.getItem('profileimage')})`
+}
+load()
+

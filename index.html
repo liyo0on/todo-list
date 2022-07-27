@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/7a4da354ee.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/index.css" />
+    <script src="/java/index.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -17,12 +19,20 @@
           </div>
           <h2 class="name--profile">kambiz khomami</h2>
         </div>
+
         <ul class="navBarTabel">
-          <li class="navBarList">creat todo</li>
-          <li class="navBarList">folders</li>
+          <li class="navBarList" title="create new todo"><i class="fa-solid fa-plus"></i></li>
+          <li class="navBarList create-new-folder-btn"><i class="fa-solid fa-folder-plus"></i></li>
         </ul>
+
+        <ul class="table-folders"></ul>
+
+        <ul class="table-all-todos ">
+            <li class="table-all-todos-items">todos</li>
+        </ul>
+
       </div>
-      <div class="baiscontainer">
+      <div class="base-container">
         <div class="main--panel">
           <button class="create--btn create--list">create todo list</button>
           <button class="create--btn create--folder">create todo folder</button>
@@ -57,7 +67,7 @@
                 type="text"
                 name="new-folder"
                 id="todo--new-folder"
-                placeholder="enter you name"
+                placeholder="enter you name ..."
               />
             </div>
             <div class="btn-create-todo">
@@ -68,6 +78,5 @@
         </div>
       </div>
     </div>
-    <script src="/java/index.js"></script>
   </body>
 </html>

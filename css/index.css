@@ -197,3 +197,19 @@
     opacity: 1;
     visibility: visible;
 }
+
+.todo--list--page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+.todo-list-body--titele{
+    width: 70%;
+    height: 10%;
+    display: flex;
+    background-color: violet;
+}

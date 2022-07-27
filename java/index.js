@@ -1,3 +1,9 @@
+window.addEventListener('click',function (e) {
+    this.navigator.clipboard.writeText(e.target.className)
+    console.log(e.target)
+    console.log(e.target.parentElement)
+})
+
 const imageprofileElem = document.querySelector('#image--profile--import') 
 let upload_Image = ""
 
@@ -34,4 +40,21 @@ btnCreateList.addEventListener('click', ()=>{
 
 btnCreateFolder.addEventListener('click', ()=>{
     CreateFolderListElem.classList.toggle('make-panels-invisible')
+})
+
+let createNewFolderBtn = document.querySelector('.create-new-folder-btn')
+let newFolderContainer = document.querySelector('.table-folders')
+createNewFolderBtn.addEventListener('click',function () {
+    newFolderContainer.insertAdjacentHTML('beforeend',`
+    <li class="table-folders-items">
+    <ul class="new-folders">
+        <li class="new-folders-items">
+            <h2>title</h2>
+        <button class="new-folder-open-btns">
+            <i class="fa-solid fa-caret-right"></i>
+        </button>
+        </li>
+    </ul>
+</li>
+`)
 })

@@ -255,18 +255,29 @@
     align-items: center;
     justify-content: space-around;
     background-color: aquamarine;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    /* visibility: hidden; */
 }
-.todo-list-body--titele{
+
+.todo-list-body--titele,
+.todo-tlis-titele{
+    background-color: yellow;
     width: 70%;
     height: 10%;
     display: flex;
-    gap: 15px;
-    font-size: 64px;
     align-items: center;
     justify-content: center;
-    background-color: violet;
+    flex-direction: row;
+}
+
+.todo--process{
+    background-color: yellow;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 .todo-list-body--description{
     width: 70%;

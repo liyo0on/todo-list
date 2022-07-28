@@ -1,3 +1,9 @@
+window.addEventListener('click',function (e) {
+    this.navigator.clipboard.writeText(e.target.className)
+    console.log(e.target)
+    console.log(e.target.parentElement)
+})
+
 const imageprofileElem = document.querySelector('#image--profile--import') 
 let upload_Image = ""
 
@@ -19,7 +25,7 @@ function load(){
 }
 load()
 
-//  creat mainpanel
+//  create main panel
 
 let btnCreateList = document.querySelector('.create--list')
 let btnCreateFolder = document.querySelector('.create--folder')

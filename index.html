@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7a4da354ee.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="/css/index.css" />
+    <script src="/java/index.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -17,12 +22,28 @@
           </div>
           <h2 class="name--profile">kambiz khomami</h2>
         </div>
+
         <ul class="navBarTabel">
+          <!-- <<<<<<< HEAD -->
           <li class="navBarList create-todo">create todo</li>
           <li class="navBarList create-folder">create folders</li>
+          <!-- ======= -->
+          <li class="navBarList" title="create new todo">
+            <i class="fa-solid fa-plus"></i>
+          </li>
+          <li class="navBarList create-new-folder-btn">
+            <i class="fa-solid fa-folder-plus"></i>
+          </li>
+          <!-- >>>>>>> 3f5ea5e4f78f7ac0e529638fae2b3306c8bc2105 -->
+        </ul>
+
+        <ul class="table-folders"></ul>
+
+        <ul class="table-all-todos">
+          <li class="table-all-todos-items">todos</li>
         </ul>
       </div>
-      <div class="baiscontainer">
+      <div class="base-container">
         <div class="main--panel">
           <button class="create--btn create--list">create todo list</button>
           <button class="create--btn create--folder">create todo folder</button>
@@ -57,7 +78,7 @@
                 type="text"
                 name="new-folder"
                 id="todo--new-folder"
-                placeholder="enter you name"
+                placeholder="enter you name ..."
               />
             </div>
             <div class="btn-create-todo">
@@ -67,26 +88,23 @@
           </div>
           <div class="todo--list--page create--panel">
             <div class="todo-list-body--titele">
-              <h2>
-                title :
-                <h3>learning js</h3>
-              </h2>
+              <h2>title :</h2>
+              <h3 class="todo-list-value">learning js</h3>
             </div>
-            <p>
+            <p class="todo-list-body--description">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius,
               quasi quisquam a iste corporis accusantium! Fuga deleniti sequi
               modi soluta officiis! Cupiditate, quae vel deleniti adipisci
               beatae optio nesciunt tenetur.
             </p>
-            <div>
-              <button>back</button>
-              <button>done</button>
-              <button>remove</button>
+            <div class="btn--contorol">
+              <button class="back--todo">back</button>
+              <button class="done--todo">done</button>
+              <button class="remove--todo">remove</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="/java/index.js"></script>
   </body>
 </html>

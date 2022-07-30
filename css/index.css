@@ -56,7 +56,8 @@
 {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-evenly;
     background-color: tomato;
     gap: 5px;
